@@ -338,7 +338,7 @@ class Bot {
 console.log('[SERVER] Server has started. Awaiting user connection...');
 
 new WebSocket.Server({
-    port: 1337
+    port: 8083
 }).on('connection', ws => {
     userWS = ws
     console.log('[SERVER] User connected')
